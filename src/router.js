@@ -120,7 +120,7 @@ export class Router {
       return this.parent.navigate(fragment, options);
     }
 
-    return this.history.navigate(resolveUrl(fragment, this.baseUrl, this.history._hasPushState), options);
+    return this.history.navigate(resolveUrl(fragment, this.baseUrl, this.history._hasPushState), options)
   }
 
   /**
